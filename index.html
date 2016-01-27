@@ -43,24 +43,74 @@
             </ul>
           </nav>
 
+          <div class="search">
+            <div class="search--hover">
+              <input type="text" name="search" placeholder="Что ищем?">
+            </div>
+          </div>
+
           <div class="user">
-            <div class="search">
-              <a href="#" class="search__link">
-                <img src="#" width="" height="" alt="Поиск" class="search__image">
-              </a>
-            </div>
+
             <div class="login">
-              <a href="#" class="login__link">
-                <img src="#" width="" height="" alt="Вход" class="login__image">
-                <div class="login__title">Вход</div>
-              </a>
+              <a href="#" class="login__btn">Вход</a>
+              <div class="login--hover">
+                <form action="#" method="post">
+                  <input type="email" name="email" placeholder="Электронная почта">
+                  <input type="password" name="password" placeholder="Пароль">
+                  <button type="submit" class="login__submit"></button>
+                </form>
+                <a href="#" class="login__link">Забыли пароль?</a>
+                <a href="#" class="login__link">Новая регистрация</a>
+              </div>
             </div>
+
             <div class="cart">
-              <a href="#" class="cart__link">
-                <img src="#" width="" height="" alt="Корзина" class="cart__image">
-                <div class="cart__title">Пусто</div>
-              </a>
+              <a href="#" class="cart__btn">2 товара</a>
+              <div class="cart--hover">
+                <div class="cart__item">
+                  <table class="cart__table">
+                    <tr class="cart__row">
+                      <td class="cart_data">
+                        <span class="cart_data--delete"></span>
+                      </td>
+                      <td class="cart_data">
+                        <img src="#" width="" height="" alt="">
+                      </td>
+                      <td>
+                        Пломбир с&nbsp;апельсиновым джемом
+                      </td>
+                      <td class="cart_data">
+                        1,5 кг х 200 руб.
+                      </td>
+                      <td class="cart_data">
+                        300 руб.
+                      </td>
+                    </tr>
+                    <tr class="cart__row">
+                      <td class="cart_data">
+                        <span class="cart_data--delete"></span>
+                      </td>
+                      <td class="cart_data">
+                        <img src="#" width="" height="" alt="">
+                      </td>
+                      <td class="cart_data">
+                        Клубничный пломбир с&nbsp;присыпкой<br>
+                        из&nbsp;белого шоколада
+                      </td>
+                      <td class="cart_data">
+                        1,5 кг х 300 руб.
+                      </td>
+                      <td class="cart_data">
+                        450 руб.
+                      </td>
+                    </tr>
+                  </table>
+                  <div class="cart__total">Итого: 750 руб.</div>
+                  <a href="#" class="cart__btn">Оформить заказ</a>
+                </div>
+              </div>
             </div>
+
           </div>
 
           <div class="contacts">
