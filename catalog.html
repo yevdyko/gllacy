@@ -155,48 +155,56 @@
 
                 <form action="#" method="post">
 
-                  <div class="sorting__title">Сортировка:</div>
-                  <select name="sorting">
-                    <option value="popularity">по популярности</option>
-                    <option value="expensive">сначала недорогие</option>
-                    <option value="cheap">сначала дорогие</option>
-                    <option value="fat">по жирности</option>
-                  </select>
-
-                  <div class="price__title">Цена: 100 руб. - 500 руб.</div>
-                  <div class="price">
-                    <input type="range" min="0" max="750" step="5" value="150">
+                  <div class="catalog-filter__item">
+                    <div class="sorting__title">Сортировка:</div>
+                    <select name="sorting">
+                      <option value="popularity">по популярности</option>
+                      <option value="expensive">сначала недорогие</option>
+                      <option value="cheap">сначала дорогие</option>
+                      <option value="fat">по жирности</option>
+                    </select>
                   </div>
 
-                  <div class="fat__title">Жирность:</div>
-                  <div class="fat">
-                    <input type="radio" name="fat" id="fat__radio--0">
-                    <label for="fat__radio--0">0%</label>
-                    <input type="radio" name="fat" id="fat__radio--10" checked>
-                    <label for="fat-radio--10">до 10%</label>
-                    <input type="radio" name="fat" id="fat__radio--30">
-                    <label for="fat-radio--30">до 30%</label>
-                    <input type="radio" name="fat" id="fat__radio--above">
-                    <label for="fat__radio--above">выше 30%</label>
+                  <div class="catalog-filter__item">
+                    <div class="price__title">Цена: 100 руб. - 500 руб.</div>
+                    <div class="price">
+                      <input type="range" min="0" max="750" step="5" value="150">
+                    </div>
                   </div>
 
-                  <div class="fillers__title">Наполнители:</div>
-                  <div class="fillers">
-                    <input type="checkbox" name="fillers" id="fillers__checkbox--chocolate" checked>
-                    <label for="fillers__checkbox--chocolate">шоколадные</label>
-                    <input type="checkbox" name="fillers" id="fillers__checkbox--sugar">
-                    <label for="fillers__checkbox--sugar">сахарные присыпки</label>
-                    <input type="checkbox" name="fillers" id="fillers__checkbox--fruits">
-                    <label for="fillers__checkbox--fruits">фрукты</label>
-                    <input type="checkbox" name="fillers" id="fillers__checkbox--syrups">
-                    <label for="fillers__checkbox--syrups">сиропы</label>
-                    <input type="checkbox" name="fillers" id="fillers__checkbox--jams">
-                    <label for="fillers__checkbox--jams">джемы</label>
+                  <div class="catalof-filter__item">
+                    <div class="fat__title">Жирность:</div>
+                    <div class="fat">
+                      <input type="radio" name="fat" id="fat__radio--0">
+                      <label for="fat__radio--0">0%</label>
+                      <input type="radio" name="fat" id="fat__radio--10" checked>
+                      <label for="fat-radio--10">до 10%</label>
+                      <input type="radio" name="fat" id="fat__radio--30">
+                      <label for="fat-radio--30">до 30%</label>
+                      <input type="radio" name="fat" id="fat__radio--above">
+                      <label for="fat__radio--above">выше 30%</label>
+                    </div>
+                  </div>
+
+                  <div class="catalog-filter__item">
+                    <div class="fillers__title">Наполнители:</div>
+                    <div class="fillers">
+                      <input type="checkbox" name="fillers" id="fillers__checkbox--chocolate" checked>
+                      <label for="fillers__checkbox--chocolate">шоколадные</label>
+                      <input type="checkbox" name="fillers" id="fillers__checkbox--sugar">
+                      <label for="fillers__checkbox--sugar">сахарные присыпки</label>
+                      <input type="checkbox" name="fillers" id="fillers__checkbox--fruits">
+                      <label for="fillers__checkbox--fruits">фрукты</label>
+                      <input type="checkbox" name="fillers" id="fillers__checkbox--syrups">
+                      <label for="fillers__checkbox--syrups">сиропы</label>
+                      <input type="checkbox" name="fillers" id="fillers__checkbox--jams">
+                      <label for="fillers__checkbox--jams">джемы</label>
+                    </div>
                   </div>
 
                   <button type="submit" class="btn">Применить</button>
 
-                </form>
+              </form>
 
               </div>
             </section>
