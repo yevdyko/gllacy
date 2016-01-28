@@ -59,13 +59,15 @@
             <div class="login">
               <a href="#" class="login__btn">Вход</a>
               <div class="login__btn login__btn--hover">
-                <form action="#" method="post">
-                  <input type="email" name="email" placeholder="Электронная почта">
-                  <input type="password" name="password" placeholder="Пароль">
-                  <button type="submit" class="login__submit"></button>
+                <form action="#" class="login-form" role="login" method="post">
+                  <input type="email" class="login-form__control" placeholder="Электронная почта">
+                  <input type="password" class="login-form__control" placeholder="Пароль">
+                  <button type="submit" class="login-form__btn"></button>
+                  <div class="login-form__links">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                  </div>
                 </form>
-                <a href="#" class="login__link">Забыли пароль?</a>
-                <a href="#" class="login__link">Новая регистрация</a>
               </div>
             </div>
 
