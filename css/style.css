@@ -209,6 +209,10 @@ h2 {
   width: 47%;
 }
 
+.contacts {
+  position: relative;
+}
+
 .contacts__map {
   width: 100%;
   min-height: 430px;
@@ -217,11 +221,13 @@ h2 {
 
 .contacts__info {
   position: absolute;
-  width: 300px;
+  top: 50%;
   right: 0;
+  width: 300px;
   text-align: left;
   color: #000;
   background-color: #fff;
+  transform: translate(0, -50%);
 }
 
 .page-footer {
