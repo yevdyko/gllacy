@@ -14,7 +14,7 @@ body {
 
 h1 {
   font-size: 35px;
-  line-height: 42px;
+  line-height: 30px;
   font-weight: 700;
 }
 
@@ -156,7 +156,7 @@ h2 {
   vertical-align: top;
 }
 
-.catalog-item:last-child {
+.catalog-item:nth-child(4n+4) {
   margin-right: 0;
 }
 
@@ -209,12 +209,13 @@ h2 {
   width: 47%;
 }
 
-.contacts {
+.contacts__map {
+  width: 100%;
   min-height: 430px;
   background-color: #000;
 }
 
-.contacts__map {
+.contacts__info {
   position: absolute;
   width: 300px;
   right: 0;

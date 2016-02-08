@@ -315,7 +315,8 @@
         </main>
 
           <section class="contacts">
-            <div class="contacts__map">
+            <div class="contacts__map" id="contacts__map"></div>
+            <div class="contacts__info">
               <p class="contacts__address">
                 Адрес главного офиса и<br>
                 офлайн магазина:
@@ -366,5 +367,23 @@
 
       </div>
     </div>
+    <script>
+      function initMap() {
+        var mapDiv = document.getElementById('contacts__map');
+        var myLatLng = {lat: 59.938810, lng: 30.323400};
+        var map = new google.maps.Map(mapDiv, {
+          center: myLatLng,
+          zoom: 15
+        });
+        var image = "img/icons/icon-marker.png";
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          icon: image
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
   </body>
 </html>
