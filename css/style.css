@@ -34,14 +34,10 @@ h2 {
 }
 
 .content-wrapper {
-  min-width: 900px;
-  max-width: 1200px;
+  min-width: 860px;
+  max-width: 1146px;
   margin: 0 auto;
-  padding: 0 2.25%;
-}
-
-.page-header {
-  padding: 0 2.25%;
+  padding: 0 2.155%;
 }
 
 .top-header {
@@ -51,13 +47,14 @@ h2 {
 .logo {
   float: left;
   width: 154px;
+  margin-left: -5px;
   margin-right: 30px;
   padding-top: 10px;
 }
 
 .menu {
   float: left;
-  width: 450px;
+  width: 400px;
 }
 
 .menu__list {
@@ -131,37 +128,40 @@ h2 {
 }
 
 .toppings {
-  width: 47%;
-  padding: 0;
+  box-sizing: border-box;
 }
 
 .toppings--raspberry {
   float: left;
+  width: 50%;
+  padding-right: 1.155%;
+
 }
 
 .toppings--chocolate {
   float: right;
+  width: 50%;
+  padding-left: 1.155%;
 }
 
 .catalog {
   font-size: 0;
-  margin-bottom: 40px;
+  margin: 0 -1.155% 40px -1.155%;
 }
 
 .catalog-item {
   display: inline-block;
-  width: 267px;
-  margin-right: 26px;
+  width: 25%;
+  padding: 0 1.155%;
   font-size: 16px;
   vertical-align: top;
-}
-
-.catalog-item:nth-child(4n+4) {
-  margin-right: 0;
+  box-sizing: border-box;
 }
 
 .catalog-item__image {
   display: block;
+  width: 100%;
+  height: auto;
   margin: 0;
 }
 
@@ -201,12 +201,16 @@ h2 {
 
 .news-blog {
   float: left;
-  width: 47%;
+  width: 50%;
+  padding-right: 1.155%;
+  box-sizing: border-box;
 }
 
 .news-subscription {
   float: right;
-  width: 47%;
+  width: 50%;
+  padding-left: 1.155%;
+  box-sizing: border-box;
 }
 
 .contacts {
@@ -234,34 +238,39 @@ h2 {
 
 }
 
-.social {
-  float: left;
+.copyright {
+  float: right;
   width: 200px;
-  padding-top: 35px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 12px;
 }
 
 .info {
-  float: left;
-  width: 350px;
-  padding-top: 35px;
-  padding-bottom: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 40px;
   text-align: center;
 }
 
-.info__link {
+.info__list {
   display: inline-block;
+  width: 400px;
   margin: 0;
   padding: 0;
   vertical-align: top;
 }
 
-.copyright {
-  float: right;
+.info__item {
+  display: inline-block;
+}
+
+.social {
+  float: left;
   width: 200px;
-  padding-top: 20px;
-  padding-bottom: 25px;
-  font-size: 12px;
+  padding-top: 35px;
+  padding-bottom: 30px;
 }
 
 .copyright__title {
@@ -315,6 +324,7 @@ h2 {
 .btn__item {
   float: left;
   width: 145px;
+  margin-top: 37px;
   margin-right: 0;
 }
 
