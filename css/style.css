@@ -35,9 +35,9 @@ h2 {
 
 .content-wrapper {
   min-width: 860px;
-  max-width: 1146px;
+  max-width: 1148px;
   margin: 0 auto;
-  padding: 0 2.155%;
+  padding: 0 26px;
 }
 
 .top-header {
@@ -123,43 +123,40 @@ h2 {
   text-align: center;
 }
 
-.toppings-add {
+.toppings-block {
   margin-bottom: 40px;
 }
 
 .toppings {
+  width: 50%;
   box-sizing: border-box;
 }
 
-.toppings--raspberry {
+.toppings--left {
   float: left;
-  width: 50%;
-  padding-right: 1.155%;
-
+  padding-right: 13px;
 }
 
-.toppings--chocolate {
+.toppings--right {
   float: right;
-  width: 50%;
-  padding-left: 1.155%;
+  padding-left: 13px;
 }
 
 .catalog {
+  margin: 0 -13px 40px -13px;
   font-size: 0;
-  margin: 0 -1.155% 40px -1.155%;
 }
 
 .catalog-item {
   display: inline-block;
   width: 25%;
-  padding: 0 1.155%;
+  padding: 0 13px;
   font-size: 16px;
   vertical-align: top;
   box-sizing: border-box;
 }
 
 .catalog-item__image {
-  display: block;
   width: 100%;
   height: auto;
   margin: 0;
@@ -175,12 +172,12 @@ h2 {
   display: none;
 }
 
-.features {
+.features-block {
   margin-bottom: 40px;
   color: #000;
 }
 
-.features__list {
+.features {
   margin: 0;
   padding: 0;
   font-size: 0;
@@ -192,25 +189,27 @@ h2 {
   margin-bottom: 30px;
   font-size: 16px;
   vertical-align: top;
+  box-sizing: border-box;
 }
 
-.news {
+.news-block {
   margin-bottom: 40px;
   color: #000;
 }
 
-.news-blog {
-  float: left;
+.news {
   width: 50%;
-  padding-right: 1.155%;
   box-sizing: border-box;
 }
 
-.news-subscription {
+.news--left {
+  float: left;
+  padding-right: 13px;
+}
+
+.news--right {
   float: right;
-  width: 50%;
-  padding-left: 1.155%;
-  box-sizing: border-box;
+  padding-left: 13px;
 }
 
 .contacts {
