@@ -156,10 +156,9 @@ h2 {
   box-sizing: border-box;
 }
 
-.catalog-item__image {
+.catalog-item__image img {
   width: 100%;
   height: auto;
-  margin: 0;
 }
 
 .catalog-item__title {
