@@ -20,10 +20,10 @@
 
             <nav class="menu">
               <ul class="menu__list">
-                <li class="menu__item">
+                <li class="menu__item menu__item--dropdown">
                   <a href="catalog.html" class="menu__link">Каталог</a>
                   <ul class="dropdown-menu">
-                    <li class="dropdown-menu__item dropdown-menu__item--border-bottom">
+                    <li class="dropdown-menu__item">
                       <a href="#" class="dropdown-menu__link">Новинки</a>
                     </li>
                     <li class="dropdown-menu__item">
@@ -49,27 +49,25 @@
               </ul>
             </nav>
 
-            <div class="right-header clearfix">
+            <div class="user-block clearfix">
 
-              <div class="search">
-                <a href="#" class="search__btn">Поиск</a>
-                <div class="search__btn search__btn--hidden">
-                  <form role="search">
-                    <div class="search-form__group">
-                      <input type="text" class="search-form__control" placeholder="Что ищем?">
-                    </div>
+              <div class="user-block__search">
+                <a href="#" class="user-block__btn user-block__btn--search">Поиск</a>
+                <div class="user-block__popup user-block__popup--search">
+                  <form action="#" method="get">
+                    <input type="search" class="user-block__search-form" name="search" placeholder="Что ищем?">
                   </form>
                 </div>
               </div>
 
-              <div class="login">
-                <a href="#" class="login__btn">Вход</a>
-                <div class="login__btn login__btn--hidden">
-                  <form action="#" role="login" method="post">
-                    <input type="email" class="login-form__control" placeholder="Электронная почта">
-                    <input type="password" class="login-form__control" placeholder="Пароль">
-                    <button type="submit" class="login-form__btn"></button>
-                    <div class="login-form__links">
+              <div class="user-block__login">
+                <a href="#" class="user-block__btn user-block__btn--login">Вход</a>
+                <div class="user-block__popup user-block__popup--login">
+                  <form action="#" method="post">
+                    <input type="email" class="user-block__email" name="email" placeholder="Электронная почта" required>
+                    <input type="password" class="user-block__password" name="password" placeholder="Пароль" required>
+                    <button type="submit" class="btn btn--red"></button>
+                    <div class="user-block__links">
                       <a href="#">Забыли пароль?</a>
                       <a href="#">Новая регистрация</a>
                     </div>
@@ -77,14 +75,14 @@
                 </div>
               </div>
 
-              <div class="cart">
-                <a href="#" class="cart__btn">2 товара</a>
-                <div class="cart__btn cart__btn--hidden">
-                  <div class="cart__item">
-                    <table class="cart__table">
+              <div class="user-block__cart">
+                <a href="#" class="user-block__btn user-block__btn--cart">Пусто</a>
+                <div class="user-block__popup user-block__popup--cart">
+                  <table>
+                    <tbody>
                       <tr>
                         <td>
-                          <a href="#" class="cart__btn cart__btn--delete">Удалить</a>
+                          <a href="#" class="user-block__btn user-block__btn--delete">Удалить</a>
                         </td>
                         <td>
                           <img src="#" width="" height="" alt="">
@@ -101,7 +99,7 @@
                       </tr>
                       <tr>
                         <td>
-                          <a href="#" class="cart__btn cart__btn--delete">Удалить</a>
+                          <a href="#" class="user-block__btn user-block__btn--delete">Удалить</a>
                         </td>
                         <td>
                           <img src="#" width="" height="" alt="">
@@ -117,17 +115,17 @@
                           450 руб.
                         </td>
                       </tr>
-                    </table>
-                    <div class="cart__total">Итого: 750 руб.</div>
-                    <a href="#" class="cart__btn">Оформить заказ</a>
-                  </div>
+                    </tbody>
+                  </table>
+                  <div class="user-block__total">Итого: 750 руб.</div>
+                  <a href="#" class="btn btn--red">Оформить заказ</a>
                 </div>
               </div>
 
             </div>
           </div>
 
-          <div class="header-contacts">
+          <div class="page-header__contacts">
             С 10 до 20, ежедневно
             <span>8 812 450-25-25</span>
           </div>
