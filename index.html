@@ -221,14 +221,13 @@
                 <span class="icon-hit"></span>
                 <img src="img/catalog/icecream01.jpg" width="267" height="267" alt="">
                 <div class="catalog-item__price">
-                  310 <span class="icon-ruble">/кг</span>
+                  310 <span class="icon-ruble">/кг
                 </div>
               </figure>
               <p class="catalog-item__title">
-                Сливочное с апельсиновым<br>
-                джемом и цитрусовой стружкой
+                <span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
               </p>
-              <a href="#" class="catalog-item__btn btn">Быстрый просмотр</a>
+              <a href="#" class="btn btn--catalog">Быстрый просмотр</a>
             </a>
           </article>
 
@@ -242,10 +241,9 @@
                 </div>
               </figure>
               <p class="catalog-item__title">
-                Сливочно-кофейное с кусочками<br>
-                шоколада
+                <span>Сливочно-кофейное с кусочками шоколада</span>
               </p>
-              <a href="#" class="catalog-item__btn btn">Быстрый просмотр</a>
+              <a href="#" class="btn btn--catalog">Быстрый просмотр</a>
             </a>
           </article>
 
@@ -259,10 +257,9 @@
                 </div>
               </figure>
               <p class="catalog-item__title">
-                Сливочно-клубничное<br>
-                с присыпкой из белого шоколада
+                <span>Сливочно-клубничное с присыпкой из белого шоколада</span>
               </p>
-              <a href="#" class="catalog-item__btn btn">Быстрый просмотр</a>
+              <a href="#" class="btn btn--catalog">Быстрый просмотр</a>
             </a>
           </article>
 
@@ -276,10 +273,9 @@
                 </div>
               </figure>
               <p class="catalog-item__title">
-                Сливочное крем-брюле<br>
-                с карамельной подливкой
+                <span>Сливочное крем-брюле с карамельной подливкой</span>
               </p>
-              <a href="#" class="catalog-item__btn btn">Быстрый просмотр</a>
+              <a href="#" class="btn btn--catalog">Быстрый просмотр</a>
             </a>
           </article>
 
@@ -330,13 +326,19 @@
 
           <div class="news news--right">
             <div class="news__frame">
+
               <p class="news__text">
                 Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
               </p>
+
               <form action="#" method="post">
-                <input type="text" name="email" placeholder="Электронная почта">
                 <a href="#" class="btn btn--form">Отправить</a>
+                <div class="news__form clearfix">
+                  <input type="email" name="email" placeholder="Электронная почта">
+                </div>
               </form>
+
+
             </div>
           </div>
 
@@ -358,24 +360,25 @@
             <span>8 812 450-25-25</span>
             (с 10 до 20 ежедневно)
           </p>
-          <a href="#" class="contacts__btn">Форма обратной связи</a>
+          <a href="#" class="btn btn--contacts">Форма обратной связи</a>
         </div>
       </section>
 
+      <!-- begin page-footer -->
       <div class="content-wrapper">
         <footer class="page-footer clearfix">
 
+          <!-- copyright -->
           <div class="copyright">
-            <div class="copyright__logo">
-              <a href="https://htmlacademy.ru" class="copyright__link">
-                <img src="img/htmlacademy-logo.png" width="109" height="37" alt="HTML Academy">
-              </a>
-            </div>
-            <p class="copyright__title">
-              Сделано в <a href="https://htmlacademy.ru" class="copyright__link">HTML Academy</a> © 2016
+            <a href="https://htmlacademy.ru" class="copyright__logo" target="_blank">
+              <img src="img/htmlacademy-logo.png" width="108" height="38" alt="HTML Academy">
+            </a>
+            <p class="copyright__text">
+              Сделано в <a href="https://htmlacademy.ru" class="copyright__link" target="_blank">HTML Academy</a> © 2016
             </p>
           </div>
 
+          <!-- social -->
           <div class="social">
             <a href="#" class="social__btn social__btn--twitter">Твиттер</a>
             <a href="#" class="social__btn social__btn--insta">Инстаграм</a>
@@ -383,16 +386,17 @@
             <a href="#" class="social__btn social__btn--vk">Вконтакте</a>
           </div>
 
+          <!-- info -->
           <div class="info">
             <ul class="info__list">
               <li class="info__item info__item--heart">
-                <a href="#" class="info__link info__link--heart">Для поставщиков</a>
-              </li>
-              <li class="info__item">
-                <a href="#" class="info__link">О производстве</a>
+                <a href="#" class="info__link">Для поставщиков</a>
               </li>
               <li class="info__item">
                 <a href="#" class="info__link">Наши документы</a>
+              </li>
+              <li class="info__item">
+                <a href="#" class="info__link">О производстве</a>
               </li>
               <li class="info__item">
                 <a href="#" class="info__link">Экологические стандарты</a>
@@ -402,6 +406,7 @@
 
         </footer>
       </div>
+      <!-- end page-footer -->
 
     </div>
 
