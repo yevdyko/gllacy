@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог: Сливочное мороженое</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,latin' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -11,25 +11,30 @@
     <div class="page-wrapper">
       <div class="content-wrapper">
 
+              <!-- begin page-header -->
         <header class="page-header">
           <div class="top-header clearfix">
 
+            <!-- logo -->
             <div class="logo">
               <a href="index.html" class="logo__link">
                 <img src="img/gllacy-logo.png" width="154" height="65" alt="Gllacy Shop">
               </a>
             </div>
 
+            <!-- menu -->
             <nav class="menu">
               <ul class="menu__list">
-                <li class="menu__item">
-                  <a href="catalog.html" class="menu__link">Каталог</a>
+                <li class="menu__item menu__item--dropdown">
+                  <a href="catalog.html" class="menu__link menu__link--current">Каталог</a>
+
+                  <!-- dropdown menu -->
                   <ul class="dropdown-menu">
-                    <li class="dropdown-menu__item dropdown-menu__item--border-bottom">
+                    <li class="dropdown-menu__item">
                       <a href="#" class="dropdown-menu__link">Новинки</a>
                     </li>
                     <li class="dropdown-menu__item">
-                      <a href="#" class="dropdown-menu__link">Сливочное</a>
+                      <a href="#" class="dropdown-menu__link dropdown-menu__link--current">Сливочное</a>
                     </li>
                     <li class="dropdown-menu__item">
                       <a href="#" class="dropdown-menu__link">Щербеты</a>
@@ -41,6 +46,7 @@
                       <a href="#" class="dropdown-menu__link">Мелорин</a>
                     </li>
                   </ul>
+
                 </li>
                 <li class="menu__item">
                   <a href="#" class="menu__link">Доставка и оплата</a>
@@ -51,42 +57,52 @@
               </ul>
             </nav>
 
-            <div class="right-header clearfix">
+            <!-- begin user-block -->
+            <div class="user-block clearfix">
 
-              <div class="search">
-                <a href="#" class="search__btn">Поиск</a>
-                <div class="search__btn search__btn--hidden">
-                  <form role="search">
-                    <div class="search-form__group">
-                      <input type="text" class="search-form__control" placeholder="Что ищем?">
-                    </div>
+              <!-- search -->
+              <div class="user-block__search">
+                <a href="#" class="user-block__btn user-block__btn--search">Поиск</a>
+
+                <!-- search popup -->
+                <div class="user-block__popup user-block__popup--search">
+                  <form action="#" method="get">
+                    <input type="search" class="user-block__search-form" name="search" placeholder="Что ищем?">
                   </form>
                 </div>
+
               </div>
 
-              <div class="login">
-                <a href="#" class="login__btn">Вход</a>
-                <div class="login__btn login__btn--hidden">
-                  <form action="#" role="login" method="post">
-                    <input type="email" class="login-form__control" placeholder="Электронная почта">
-                    <input type="password" class="login-form__control" placeholder="Пароль">
-                    <button type="submit" class="login-form__btn"></button>
-                    <div class="login-form__links">
+              <!-- login -->
+              <div class="user-block__login">
+                <a href="#" class="user-block__btn user-block__btn--login">Вход</a>
+
+                <!-- login popup -->
+                <div class="user-block__popup user-block__popup--login">
+                  <form action="#" method="post">
+                    <input type="email" class="user-block__email" name="email" placeholder="Электронная почта" required>
+                    <input type="password" class="user-block__password" name="password" placeholder="Пароль" required>
+                    <button type="submit" class="btn btn--red"></button>
+                    <div class="user-block__links">
                       <a href="#">Забыли пароль?</a>
                       <a href="#">Новая регистрация</a>
                     </div>
                   </form>
                 </div>
+
               </div>
 
-              <div class="cart">
-                <a href="#" class="cart__btn">2 товара</a>
-                <div class="cart__btn cart__btn--hidden">
-                  <div class="cart__item">
-                    <table class="cart__table">
+              <!-- cart -->
+              <div class="user-block__cart">
+                <a href="#" class="user-block__btn user-block__btn--cart">2 товара</a>
+
+                <!-- cart popup -->
+                <div class="user-block__popup user-block__popup--cart">
+                  <table>
+                    <tbody>
                       <tr>
                         <td>
-                          <a href="#" class="cart__btn cart__btn--delete">Удалить</a>
+                          <a href="#" class="user-block__btn user-block__btn--delete">Удалить</a>
                         </td>
                         <td>
                           <img src="#" width="" height="" alt="">
@@ -103,7 +119,7 @@
                       </tr>
                       <tr>
                         <td>
-                          <a href="#" class="cart__btn cart__btn--delete">Удалить</a>
+                          <a href="#" class="user-block__btn user-block__btn--delete">Удалить</a>
                         </td>
                         <td>
                           <img src="#" width="" height="" alt="">
@@ -119,25 +135,32 @@
                           450 руб.
                         </td>
                       </tr>
-                    </table>
-                    <div class="cart__total">Итого: 750 руб.</div>
-                    <a href="#" class="cart__btn">Оформить заказ</a>
-                  </div>
+                    </tbody>
+                  </table>
+                  <div class="user-block__total">Итого: 750 руб.</div>
+                  <a href="#" class="btn btn--red">Оформить заказ</a>
                 </div>
+
               </div>
 
             </div>
+            <!-- end user-block -->
+
           </div>
 
-          <div class="header-contacts">
+          <!-- contacts -->
+          <div class="page-header__contacts">
             С 10 до 20, ежедневно
             <span>8 812 450-25-25</span>
           </div>
 
         </header>
+        <!-- end page-header -->
 
+        <!-- begin main -->
         <main>
 
+          <!-- begin breadcrumps -->
           <ul class="breadcrumbs">
             <li class="breadcrumbs__item">
               <a href="index.html" class="breadcrumbs__link">Главная</a>
@@ -149,18 +172,21 @@
               Сливочное
             </li>
           </ul>
+          <!-- end breadcrumps -->
 
           <h1 class="catalog__title">
             Сливочное мороженое
           </h1>
 
-          <section class="catalog__filter clearfix">
+          <!-- begin catalog filter -->
+          <section class="filter">
 
             <form action="#" method="post">
 
-              <div class="sorting__item">
-                <div class="sorting__title">Сортировка:</div>
-                <select name="sorting">
+              <!-- sorting filter -->
+              <div class="filter__item">
+                <h4 class="filter__title">Сортировка:</h4>
+                <select class="sorting">
                   <option value="popularity">по популярности</option>
                   <option value="expensive">сначала недорогие</option>
                   <option value="cheap">сначала дорогие</option>
@@ -168,51 +194,100 @@
                 </select>
               </div>
 
-              <div class="price__item">
-                <div class="price__title">Цена: 100 руб. - 500 руб.</div>
+              <!-- price filter -->
+              <div class="filter__item">
+                <h4 class="filter__title">Цена: 100 руб. - 500 руб.</h4>
                 <div class="price">
-                  <input type="range" min="0" max="750" step="5" value="150">
+                  <div class="line">
+                    <div class="line-price">
+                      <div class="min"></div>
+                      <div class="max"></div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <div class="fat__item">
-                <div class="fat__title">Жирность:</div>
+              <!-- fat filter -->
+              <div class="filter__item">
+                <h4 class="filter__title">Жирность:</h4>
+
                 <div class="fat">
-                  <input type="radio" name="fat" id="fat__radio--0">
-                  <label for="fat__radio--0">0%</label>
-                  <input type="radio" name="fat" id="fat__radio--10" checked>
-                  <label for="fat-radio--10">до 10%</label>
-                  <input type="radio" name="fat" id="fat__radio--30">
-                  <label for="fat-radio--30">до 30%</label>
-                  <input type="radio" name="fat" id="fat__radio--above">
-                  <label for="fat__radio--above">выше 30%</label>
+
+                  <div class="fat__item">
+                    <input type="radio" name="fat" id="fat-0">
+                    <label for="fat-0" class="fat-radio">0%</label>
+                  </div>
+
+                  <div class="fat__item">
+                    <input type="radio" name="fat" id="fat-10" checked>
+                    <label for="fat-10" class="fat-radio">до 10%</label>
+                  </div>
+
+                  <div class="fat__item">
+                    <input type="radio" name="fat" id="fat-30">
+                    <label for="fat-30" class="fat-radio">до 30%</label>
+                  </div>
+
+                  <div class="fat__item">
+                    <input type="radio" name="fat" id="fat-above">
+                    <label for="fat-above" class="fat-radio">выше 30%</label>
+                  </div>
+
                 </div>
               </div>
 
-              <div class="fillers__item">
-                <div class="fillers__title">Наполнители:</div>
+              <!-- fillers filter -->
+              <div class="filter__item">
+                <h4 class="filter__title">Наполнители:</h4>
+
                 <div class="fillers">
-                  <input type="checkbox" name="fillers" id="fillers__checkbox--chocolate" checked>
-                  <label for="fillers__checkbox--chocolate">шоколадные</label>
-                  <input type="checkbox" name="fillers" id="fillers__checkbox--sugar">
-                  <label for="fillers__checkbox--sugar">сахарные присыпки</label>
-                  <input type="checkbox" name="fillers" id="fillers__checkbox--fruits">
-                  <label for="fillers__checkbox--fruits">фрукты</label>
-                  <input type="checkbox" name="fillers" id="fillers__checkbox--syrups">
-                  <label for="fillers__checkbox--syrups">сиропы</label>
-                  <input type="checkbox" name="fillers" id="fillers__checkbox--jams">
-                  <label for="fillers__checkbox--jams">джемы</label>
+
+                  <div class="fillers__item">
+                    <input type="checkbox" name="fillers" id="fillers-chocolate" checked>
+                    <label for="fillers-chocolate" class="fillers-checkbox">
+                      шоколадные
+                    </label>
+                  </div>
+
+                  <div class="fillers__item">
+                    <input type="checkbox" name="fillers" id="fillers-sugar">
+                    <label for="fillers-sugar" class="fillers-checkbox">
+                      сахарные присыпки
+                    </label>
+                  </div>
+
+                  <div class="fillers__item">
+                    <input type="checkbox" name="fillers" id="fillers-fruits">
+                    <label for="fillers-fruits" class="fillers-checkbox">
+                      фрукты
+                    </label>
+                  </div>
+
+                  <div class="fillers__item">
+                    <input type="checkbox" name="fillers" id="fillers-syrups">
+                    <label for="fillers-syrups" class="fillers-checkbox">
+                      сиропы
+                    </label>
+                  </div>
+
+                  <div class="fillers__item">
+                    <input type="checkbox" name="fillers" id="fillers-jams">
+                    <label for="fillers-jams" class="fillers-checkbox">
+                      джемы
+                    </label>
+                  </div>
+
                 </div>
               </div>
 
-              <div class="btn__item">
-                <button type="submit" class="btn">Применить</button>
-              </div>
+              <button type="submit" class="btn__filter">Применить</button>
 
             </form>
 
           </section>
+          <!-- end catalog filter  -->
 
+          <!-- begin catalog -->
           <section class="catalog">
 
             <article class="catalog-item">
@@ -408,13 +483,14 @@
 
           </section>
 
+          <!-- begin pagination -->
           <div class="pagination">
             <ul class="pagination__list">
-              <li class="pagination__item">
+             <!--  <li class="pagination__item pagination__item--prev">
                 <a href="#" class="pagination__link pagination__link--disabled">Назад</a>
-              </li>
-              <li class="pagination__item">
-                <a href="#" class="pagination__link pagination__link--active">1</a>
+              </li> -->
+              <li class="pagination__item pagination__item--active">
+                <a href="#" class="pagination__link">1</a>
               </li>
               <li class="pagination__item">
                 <a href="#" class="pagination__link">2</a>
@@ -428,44 +504,47 @@
               <li class="pagination__item">
                 <a href="#" class="pagination__link">5</a>
               </li>
-              <li class="pagination__item">
+            <!--   <li class="pagination__item">
                 <a href="#" class="pagination__link">Вперед</a>
-              </li>
+              </li> -->
             </ul>
           </div>
+          <!-- end paginataion -->
 
         </main>
 
+        <!-- begin page-footer -->
         <footer class="page-footer clearfix">
 
+          <!-- copyright -->
           <div class="copyright">
-            <div class="copyright__logo">
-              <a href="https://htmlacademy.ru" class="copyright__link">
-                <img src="img/htmlacademy-logo.png" width="109" height="37" alt="HTML Academy">
-              </a>
-            </div>
-            <p class="copyright__title">
-              Сделано в <a href="https://htmlacademy.ru" class="copyright__link">HTML Academy</a> © 2016
+            <a href="https://htmlacademy.ru" class="copyright__logo" target="_blank">
+              <img src="img/htmlacademy-logo.png" width="108" height="38" alt="HTML Academy">
+            </a>
+            <p class="copyright__text">
+              Сделано в <a href="https://htmlacademy.ru" class="copyright__link" target="_blank">HTML Academy</a> © 2016
             </p>
           </div>
 
+          <!-- social -->
           <div class="social">
             <a href="#" class="social__btn social__btn--twitter">Твиттер</a>
-            <a href="#" class="social__btn social__btn--instagram">Инстаграм</a>
+            <a href="#" class="social__btn social__btn--insta">Инстаграм</a>
             <a href="#" class="social__btn social__btn--fb">Фейсбук</a>
             <a href="#" class="social__btn social__btn--vk">Вконтакте</a>
           </div>
 
+          <!-- info -->
           <div class="info">
             <ul class="info__list">
-              <li class="info__item">
-                <a href="#" class="info__link info__link--heart">Для поставщиков</a>
-              </li>
-              <li class="info__item">
-                <a href="#" class="info__link">О производстве</a>
+              <li class="info__item info__item--heart">
+                <a href="#" class="info__link">Для поставщиков</a>
               </li>
               <li class="info__item">
                 <a href="#" class="info__link">Наши документы</a>
+              </li>
+              <li class="info__item">
+                <a href="#" class="info__link">О производстве</a>
               </li>
               <li class="info__item">
                 <a href="#" class="info__link">Экологические стандарты</a>
@@ -474,6 +553,7 @@
           </div>
 
         </footer>
+        <!-- end page-footer -->
 
       </div>
     </div>
