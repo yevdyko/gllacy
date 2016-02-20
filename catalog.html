@@ -67,7 +67,7 @@
                 <!-- search popup -->
                 <div class="user-block__popup user-block__popup--search">
                   <form action="#" method="get">
-                    <input type="search" class="user-block__search-form" name="search" placeholder="Что ищем?">
+                    <input type="search" class="user-block__input" name="search" placeholder="Что ищем?">
                   </form>
                 </div>
 
@@ -80,9 +80,9 @@
                 <!-- login popup -->
                 <div class="user-block__popup user-block__popup--login">
                   <form action="#" method="post">
-                    <input type="email" class="user-block__email" name="email" placeholder="Электронная почта" required>
-                    <input type="password" class="user-block__password" name="password" placeholder="Пароль" required>
-                    <button type="submit" class="btn btn--red"></button>
+                    <input type="email" class="user-block__input" name="email" placeholder="Электронная почта" required>
+                    <input type="password" class="user-block__input" name="password" placeholder="Пароль" required>
+                    <input type="submit" class="btn btn--login" value="Войти">
                     <div class="user-block__links">
                       <a href="#">Забыли пароль?</a>
                       <a href="#">Новая регистрация</a>
@@ -186,12 +186,14 @@
               <!-- sorting filter -->
               <div class="filter__item">
                 <h4 class="filter__title">Сортировка:</h4>
-                <select class="sorting">
-                  <option value="popularity">по популярности</option>
-                  <option value="expensive">сначала недорогие</option>
-                  <option value="cheap">сначала дорогие</option>
-                  <option value="fat">по жирности</option>
-                </select>
+                <div class="sorting__item">
+                  <select class="sorting">
+                    <option value="popularity">по популярности</option>
+                    <option value="expensive">сначала недорогие</option>
+                    <option value="cheap">сначала дорогие</option>
+                    <option value="fat">по жирности</option>
+                  </select>
+                </div>
               </div>
 
               <!-- price filter -->
@@ -486,11 +488,11 @@
           <!-- begin pagination -->
           <div class="pagination">
             <ul class="pagination__list">
-             <!--  <li class="pagination__item pagination__item--prev">
+              <li class="pagination__item pagination__item--prev">
                 <a href="#" class="pagination__link pagination__link--disabled">Назад</a>
-              </li> -->
+              </li>
               <li class="pagination__item pagination__item--active">
-                <a href="#" class="pagination__link">1</a>
+                <a href="#" class="pagination__link pagination__link--active">1</a>
               </li>
               <li class="pagination__item">
                 <a href="#" class="pagination__link">2</a>
