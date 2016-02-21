@@ -1010,7 +1010,6 @@ input {
 }
 
 .news--left {
-  float: left;
   padding: 20px;
 
   background: #ffffff url("../img/background-strawberry.jpg") no-repeat right;
@@ -1020,7 +1019,6 @@ input {
 .news--right {
   position: relative;
 
-  float: right;
   padding: 6px;
 
   background: #ffffff url("../img/background-pattern-post.png") repeat 0 0;
