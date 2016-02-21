@@ -1084,27 +1084,43 @@ input {
   outline: none;
 }
 
-.contacts__map {
-  width: 100%;
+/* contacts */
+
+.contacts {
+  position: relative;
+
   min-height: 430px;
+}
+
+.contacts .content-wrapper {
+  position: relative;
+
+  min-height: inherit;
+}
+
+.contacts__map {
+  position: absolute;
+
+  width: 100%;
+  min-height: inherit;
+
   background-color: #000000;
 }
 
 .contacts__info {
   position: absolute;
-  z-index: 5;
-  bottom: 0;
-  right: 0;
+  top: 50%;
+  right: 26px;
 
   width: 300px;
   padding: 30px 25px;
-  margin-right: 20px;
 
   text-align: left;
   color: #000000;
   background-color: #fff;
   border-radius: 13px;
 
+  transform: translate(0, -50%);
   box-sizing: border-box;
 }
 
@@ -1127,6 +1143,7 @@ input {
 }
 
 .contacts__phone {
+  margin: 0;
   margin-bottom: 25px;
 
   font-weight: 400;
@@ -1144,10 +1161,7 @@ input {
 }
 
 .btn--contacts {
-  width: 100%;
-  /*margin: 0 auto;*/
-  margin-top: 27px;
-  margin-bottom: 30px;
+  width: 250px;
   padding: 12px 20px;
 
   font-size: 17px;
