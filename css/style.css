@@ -62,9 +62,9 @@ h2 {
   padding: 0 26px;
 }
 
-.top-header {
+/* page-header */
 
-}
+/*logo*/
 
 .logo {
   float: left;
@@ -81,6 +81,8 @@ h2 {
   width: 154px;
   height: 65px;
 }
+
+/*menu*/
 
 .menu {
   float: left;
@@ -166,6 +168,8 @@ h2 {
   box-shadow: 0 2px 1px 0 #696969 inset;
 }
 
+/* dropdown-menu */
+
 .dropdown-menu {
   position: absolute;
   top: 37px;
@@ -188,10 +192,6 @@ h2 {
 
   overflow: hidden;
   list-style: none;
-}
-
-.dropdown-menu__item {
-
 }
 
 .dropdown-menu__item:first-child {
@@ -229,6 +229,8 @@ h2 {
   background: #f6b5a5;
 }
 
+/* user-block */
+
 .user-block {
   float: right;
   padding: 0;
@@ -242,7 +244,7 @@ h2 {
   float: left;
   width: 32px;
   margin-right: 10px;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .user-block__login {
@@ -251,7 +253,7 @@ h2 {
   float: left;
   max-width: 100px;
   margin-right: 10px;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .user-block__cart {
@@ -259,6 +261,13 @@ h2 {
 
   float: right;
   width: 118px;
+  padding-bottom: 10px;
+}
+
+.user-block__search:hover .user-block__popup,
+.user-block__login:hover .user-block__popup,
+.user-block__cart:hover .user-block__popup {
+  display: block;
 }
 
 .user-block__btn {
@@ -277,10 +286,6 @@ h2 {
 .user-block__btn:hover {
   color: #373737;
   background-color: #f8f7f4;
-}
-
-.user-block__btn:hover + .user-block__popup {
-  display: block;
 }
 
 .user-block__btn::before {
