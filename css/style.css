@@ -170,7 +170,7 @@ h2 {
   position: absolute;
   top: 37px;
   left: -7px;
-  z-index:15;
+  z-index:2;
 
   display: none;
   width: 145px;
@@ -782,7 +782,6 @@ input {
 
 .catalog-item {
   position: relative;
-  z-index:29;
 
   display: inline-block;
   width: 25%;
@@ -797,14 +796,13 @@ input {
 }
 
 .catalog-item:hover {
-  z-index: 30;
+  z-index: 3;
   background-color: rgba(255, 255, 255, 0.3);
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 .catalog-item:hover .btn--catalog {
   display: block;
-  z-index: 9;
 }
 
 .catalog-item__link {
@@ -813,13 +811,9 @@ input {
   text-decoration: none;
   color: #ffffff;
   border-bottom: 1px solid rgba(230, 230, 255, 0.4);
-
-
 }
 
 .catalog-item__image {
-  z-index: 6;
-
   margin: 0;
   padding: 0;
 }
@@ -838,7 +832,7 @@ input {
   position: absolute;
   top: 0;
   left: 0;
-  z-index:20;
+  z-index:1;
 
   width: 61px;
   height: 61px;
@@ -851,8 +845,7 @@ input {
   content: "";
   position: absolute;
   top: 9px;
-  left: 95px;
-  z-index:20;
+  left: 85px;
 
   width: 31px;
   height: 36px;
@@ -863,7 +856,7 @@ input {
 
 .catalog-item__price {
   position: absolute;
-  bottom: 17px;
+  bottom: 20%;
   left: 0;
 
   width: 160px;
