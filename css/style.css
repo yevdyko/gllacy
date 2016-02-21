@@ -54,6 +54,8 @@ h2 {
 }
 
 .content-wrapper {
+  position: relative;
+
   min-width: 860px;
   max-width: 1148px;
   margin: 0 auto;
@@ -253,6 +255,8 @@ h2 {
 }
 
 .user-block__cart {
+  position: relative;
+
   float: right;
   width: 118px;
 }
@@ -326,10 +330,6 @@ input {
   width: 242px;
 }
 
-.user-block__popup--cart {
-  display: none;
-}
-
 .user-block__links {
   float: right;
 }
@@ -352,6 +352,103 @@ input {
 
 .user-block__links a:active {
   color: #ec593c;
+}
+
+.user-block__popup--cart {
+  width: 540px;
+  padding: 15px;
+  padding-bottom: 22px;
+  color: #333333;
+  font-size: 13px;
+  line-height: 17px;
+  border-radius: 5px;
+  background-color: #f8f7f4;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.cart__table {
+  width: 100%;
+  border-bottom: 1px solid #cacac7;
+  text-align: left;
+}
+
+.cart__table td {
+  position: relative;
+  vertical-align: top;
+}
+
+.user-block__btn--delete {
+  display: block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  font-size: 0;
+  top: 22px;
+  left: 0px;
+  background-color: #f8f7f4;
+}
+
+.user-block__btn--delete::before,
+.user-block__btn--delete::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  width: 15px;
+  border-top: 1px solid #333333;
+}
+
+.user-block__btn--delete::before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.user-block__btn--delete::after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.cart__table img {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  padding-right: 10px;
+}
+
+.icecream__title {
+  display: inline-block;
+  vertical-align: top;
+  width: 230px;
+  margin-top: 17px;
+  margin-bottom: 13px;
+}
+
+.icecream__amount p {
+  width: 117px;
+  margin-top: 17px;
+  margin-bottom: 13px;
+}
+
+.icecream__amount--grey {
+  color: #808080;
+}
+
+.icecream__price p {
+  width: 63px;
+  margin-top: 17px;
+  margin-bottom: 13px;
+}
+
+.user-block__total {
+  margin: 15px 0;
+  margin-right: 10px;
+  font-size: 15px;
+  line-height: 18px;
+  color: #333333;
+  font-weight: 600;
+  text-align: right;
 }
 
 .user-block__btn--search {
@@ -665,6 +762,14 @@ input {
   line-height: 21px;
 }
 
+.btn--cart {
+  float: right;
+  vertical-align: top;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
+}
+
 .toppings .btn {
   float: right;
 
@@ -677,6 +782,7 @@ input {
 
 .catalog-item {
   position: relative;
+  z-index:29;
 
   display: inline-block;
   width: 25%;
@@ -691,7 +797,7 @@ input {
 }
 
 .catalog-item:hover {
-  z-index: 11;
+  z-index: 30;
   background-color: rgba(255, 255, 255, 0.3);
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.1);
 }
@@ -804,8 +910,6 @@ input {
 }
 
 .features {
-  z-index: 55;
-
   margin-bottom: 40px;
   padding: 25px 20px;
   padding-bottom: 17px;
@@ -989,11 +1093,6 @@ input {
   outline: none;
 }
 
-
-.contacts {
-  position: relative;
-}
-
 .contacts__map {
   width: 100%;
   min-height: 430px;
@@ -1002,11 +1101,13 @@ input {
 
 .contacts__info {
   position: absolute;
-  top: 50%;
-  right: 23px;
+  z-index: 5;
+  bottom: 0;
+  right: 0;
 
   width: 300px;
   padding: 30px 25px;
+  margin-right: 20px;
 
   text-align: left;
   color: #000000;
@@ -1014,7 +1115,6 @@ input {
   border-radius: 13px;
 
   box-sizing: border-box;
-  transform: translate(0, -50%);
 }
 
 .contacts__address {
@@ -1626,7 +1726,7 @@ input[type="checkbox"]:disabled:checked + label::after {
 }
 
 .pagination__list {
-  float: right;
+  text-align: right;
 
   margin: 0;
   padding: 0;

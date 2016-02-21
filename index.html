@@ -109,23 +109,23 @@
 
                 <!-- cart popup -->
                 <div class="user-block__popup user-block__popup--cart">
-                  <table>
+                  <table class="cart__table">
                     <tbody>
                       <tr>
                         <td>
                           <a href="#" class="user-block__btn user-block__btn--delete">Удалить</a>
                         </td>
                         <td>
-                          <img src="#" width="" height="" alt="">
+                          <img src="img/catalog/icecream01.jpg" width="33" height="33" alt="">
                         </td>
-                        <td>
+                        <td class="icecream__title">
                           Пломбир с апельсиновым джемом
                         </td>
-                        <td>
-                          1,5 кг х 200 руб.
+                        <td class="icecream__amount">
+                          <p>1,5 кг х <span class="icecream__amount--grey">200 руб.</span></p>
                         </td>
-                        <td>
-                          300 руб.
+                        <td class="icecream__price">
+                          <p>300 руб.</p>
                         </td>
                       </tr>
                       <tr>
@@ -133,23 +133,23 @@
                           <a href="#" class="user-block__btn user-block__btn--delete">Удалить</a>
                         </td>
                         <td>
-                          <img src="#" width="" height="" alt="">
+                          <img src="img/catalog/icecream03.jpg" width="33" height="33" alt="">
                         </td>
-                        <td>
+                        <td class="icecream__title">
                           Клубничный пломбир с присыпкой<br>
                           из белого шоколада
                         </td>
-                        <td>
-                          1,5 кг х 300 руб.
+                        <td class="icecream__amount">
+                          <p>1,5 кг х <span class="icecream__amount--grey">300 руб.</span></p>
                         </td>
-                        <td>
-                          450 руб.
+                        <td class="icecream__price">
+                          <p>450 руб.</p>
                         </td>
                       </tr>
                     </tbody>
                   </table>
                   <div class="user-block__total">Итого: 750 руб.</div>
-                  <a href="#" class="btn btn--red">Оформить заказ</a>
+                  <a href="#" class="btn btn--cart">Оформить заказ</a>
                 </div>
 
               </div>
@@ -387,21 +387,34 @@
         <!-- contacts-map -->
         <div class="contacts__map" id="contacts__map"></div>
 
-        <!-- contacts-info -->
-        <div class="contacts__info">
-          <p class="contacts__address">
-            Адрес главного офиса и<br>
-            офлайн магазина:
-            <span>ул. Большая Конюшенная<br>
-            19/8, Санкт-Петербург</span>
-          </p>
-          <p class="contacts__phone">
-            Для заказов по телефону:
-            <span>8 812 450-25-25</span>
-            (с 10 до 20 ежедневно)
-          </p>
-          <a href="#" class="btn btn--contacts">Форма обратной связи</a>
-        </div>
+          <!-- begin contacts-wrapper -->
+          <div class="content-wrapper">
+
+            <!-- contacts-info -->
+            <div class="contacts__info">
+
+              <p class="contacts__address">
+                Адрес главного офиса и<br>
+                офлайн магазина:
+                <span>ул. Большая Конюшенная<br>
+                19/8, Санкт-Петербург</span>
+              </p>
+
+              <p class="contacts__phone">
+                Для заказов по телефону:
+                <span>8 812 450-25-25</span>
+                (с 10 до 20 ежедневно)
+              </p>
+
+              <a href="#" class="btn btn--contacts">Форма обратной связи</a>
+
+            </div>
+
+          </div>
+          <!-- end content-wrapper -->
+
+        <!-- </div> -->
+
       </section>
       <!-- end contacts -->
 
