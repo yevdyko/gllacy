@@ -463,6 +463,36 @@
     </div>
     <!-- end page-wrapper -->
 
+    <!-- begin feedback-form -->
+    <div class="feedback-wrapper">
+      <div class="feedback">
+        <h4 class="feedback__title">Мы обязательно вам ответим!</h5>
+
+        <button class="feedback__btn feedback__btn--close"></button>
+
+        <form action="#" method="post">
+          <input type="text" class="textarea" name="name" id="feedback__name">
+          <div class="placeholder">
+            <label for="feedback__name" class="form-hint">Как вас зовут?</label>
+          </div>
+
+          <input type="email" class="textarea" name="email" id="feedback__email">
+          <div class="placeholder">
+            <label for="feedback__email" class="form-hint">Ваша почта для ответа?</label>
+          </div>
+
+          <textarea class="textarea textarea--large" cols="30" rows="5" name="text" id="feedback__text"></textarea>
+          <div class="placeholder placeholder--large">
+            <label for="feedback__text" class="form-hint">Напишите что-нибудь...</label>
+          </div>
+
+          <button class="btn btn btn--submit" type="submit">Отправить</button>
+        </form>
+
+      </div>
+    </div>
+    <!-- end feedback-form -->
+
     <script>
       function initMap() {
         var mapDiv = document.getElementById('contacts__map');
