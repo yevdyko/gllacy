@@ -787,7 +787,7 @@ input {
   display: inline-block;
   width: 25%;
   padding: 13px;
-  margin-bottom: 20px;
+  margin-bottom: 7px;
   padding-bottom: 20px;
 
   font-size: 16px;
@@ -941,6 +941,7 @@ input {
 /* features */
 
 .features {
+  margin-top: 13px;
   margin-bottom: 40px;
   padding: 25px 20px;
   padding-bottom: 17px;
