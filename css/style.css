@@ -1764,7 +1764,7 @@ input[type="checkbox"]:disabled:checked + label::after {
 /* pagination */
 
 .pagination {
-  margin-top: 65px;
+  margin-top: 55px;
   margin-bottom: 30px;
 
 }
@@ -1820,10 +1820,16 @@ input[type="checkbox"]:disabled:checked + label::after {
   background-color: #ffffff;
 }
 
-.pagination__link:not(.pagination__link--active):hover,
-.pagination__link:not(.pagination__link--prev):hover,
-.pagination__link:not(.pagination__link--next):hover {
+.pagination__link:not(.pagination__link--active):hover {
   background-color: rgba(255, 255, 255, 0.4);
+}
+
+.pagination__item:first-child .pagination__link--prev {
+  background-color: transparent;
+}
+
+.pagination__item:last-child .pagination__link--next {
+  background-color: transparent;
 }
 
 .pagination__link--prev,
