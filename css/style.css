@@ -379,9 +379,9 @@ input {
   box-sizing: border-box;
 }
 
-.form-hint--popup {
+.form-hint--search {
   left: 15px;
-  top: -28px;
+  top: -29px;
 
   font-size: 14px;
   line-height: 18px;
@@ -389,8 +389,22 @@ input {
   color: #999999;
 }
 
-.textarea:focus + .placeholder .form-hint--popup {
-  top: -59px;
+.form-hint--login {
+  left: 15px;
+  top: -42px;
+
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #999999;
+}
+
+.textarea:focus + .placeholder .form-hint--search {
+  top: -57px;
+}
+
+.textarea:focus + .placeholder .form-hint--login {
+  top: -70px;
 }
 
 .user-block__input {
@@ -406,7 +420,8 @@ input {
 }
 
 .user-block__popup--login .user-block__input {
-  margin-bottom: 12px;
+  position: relative;
+  margin-bottom: 13px;
   width: 242px;
 }
 
