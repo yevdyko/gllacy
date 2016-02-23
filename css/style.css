@@ -399,12 +399,26 @@ input {
   color: #999999;
 }
 
+.form-hint--subscription {
+  left: 15px;
+  top: 13px;
+
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #999999;
+}
+
 .textarea:focus + .placeholder .form-hint--search {
-  top: -57px;
+  top: -58px;
 }
 
 .textarea:focus + .placeholder .form-hint--login {
-  top: -70px;
+  top: -71px;
+}
+
+.textarea:focus + .placeholder .form-hint--subscription {
+  top: -17px;
 }
 
 .user-block__input {
@@ -1197,7 +1211,7 @@ input {
   line-height: 22px;
 }
 
-.news__form input[type="email"] {
+.news__input {
   float: left;
 
   display: block;
@@ -1210,6 +1224,17 @@ input {
   border-radius: 5px;
 
   box-sizing: border-box;
+  outline: none;
+}
+
+.news__input:hover {
+  border-color: #999999;
+  box-shadow: inset 0 0 0 1px #999999;
+}
+
+.news__input:focus {
+  border-color: #8fbdec;
+  box-shadow: inset 0 0 0 1px #8fbdec;
   outline: none;
 }
 
@@ -1604,6 +1629,7 @@ select::-ms-expand {
 
   display: block;
   margin-top: 48px;
+
   border: 5px solid transparent;
   border-top: 5px solid #ffffff;
 }
@@ -1741,10 +1767,6 @@ input[type="radio"]:checked  + label::after {
 
 .fat__item:hover label::before {
   border: 2px solid #ffffff;
-}
-
-input[type="radio"]:disabled:checked + label::after {
-
 }
 
 /* fillers filter */
@@ -2127,7 +2149,7 @@ input[type="checkbox"]:disabled:checked + label::after {
   color: #9a9a9a;
 }
 
-.placeholder-large .lostfocus {
+.placeholder--large .lostfocus {
   top: -192px;
 }
 
