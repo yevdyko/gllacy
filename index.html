@@ -80,7 +80,10 @@
                 <!-- search popup -->
                 <div class="user-block__popup user-block__popup--search">
                   <form action="#" method="get">
-                    <input type="search" class="user-block__input" name="search" placeholder="Что ищем?">
+                    <input type="search" class="textarea user-block__input" name="search" id="user-block__input">
+                    <div class="placeholder">
+                      <label for="user-block__input" class="form-hint form-hint--popup">Что ищем?</label>
+                    </div>
                   </form>
                 </div>
 
@@ -473,17 +476,17 @@
         <form action="#" method="post">
           <input type="text" class="textarea" name="name" id="feedback__name">
           <div class="placeholder">
-            <label for="feedback__name" class="form-hint">Как вас зовут?</label>
+            <label for="feedback__name" class="form-hint form-hint--feedback">Как вас зовут?</label>
           </div>
 
           <input type="email" class="textarea" name="email" id="feedback__email">
           <div class="placeholder">
-            <label for="feedback__email" class="form-hint">Ваша почта для ответа?</label>
+            <label for="feedback__email" class="form-hint form-hint--feedback">Ваша почта для ответа?</label>
           </div>
 
           <textarea class="textarea textarea--large" cols="30" rows="5" name="text" id="feedback__text"></textarea>
           <div class="placeholder placeholder--large">
-            <label for="feedback__text" class="form-hint">Напишите что-нибудь...</label>
+            <label for="feedback__text" class="form-hint form-hint--feedback">Напишите что-нибудь...</label>
           </div>
 
           <button class="btn btn--submit" type="submit">Отправить</button>
