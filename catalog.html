@@ -75,7 +75,10 @@
                 <!-- search popup -->
                 <div class="user-block__popup user-block__popup--search">
                   <form action="#" method="get">
-                    <input type="search" class="user-block__input" name="search" placeholder="Что ищем?">
+                    <input type="search" class="textarea user-block__input" name="search" id="user-block__input">
+                    <div class="placeholder">
+                      <label for="user-block__input" class="form-hint form-hint--search">Что ищем?</label>
+                    </div>
                   </form>
                 </div>
 
@@ -88,8 +91,14 @@
                 <!-- login popup -->
                 <div class="user-block__popup user-block__popup--login">
                   <form action="#" method="post">
-                    <input type="email" class="user-block__input" name="email" placeholder="Электронная почта" required>
-                    <input type="password" class="user-block__input" name="password" placeholder="Пароль" required>
+                    <input type="email" class="textarea user-block__input" name="email" id="user-block__input" required>
+                    <div class="placeholder">
+                      <label for="user-block__input" class="form-hint form-hint--login">Электронная почта</label>
+                    </div>
+                    <input type="password" class="textarea user-block__input" name="password" id="user-block__input" required>
+                    <div class="placeholder">
+                      <label for="user-block__input" class="form-hint form-hint--login">Пароль</label>
+                    </div>
                     <input type="submit" class="btn btn--login" value="Войти">
                     <div class="user-block__links">
                       <a href="#">Забыли пароль?</a>
