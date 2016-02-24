@@ -1350,7 +1350,8 @@ textarea {
 
 .contacts__phone span {
   display: block;
-  margin-top: 2px;
+  margin-top: 4px;
+  margin-bottom: 3px;
 
   font-weight: 600;
   font-size: 18px;
@@ -1358,11 +1359,15 @@ textarea {
 }
 
 .btn--contacts {
+  display: block;
   width: 250px;
   padding: 12px 20px;
 
   font-size: 17px;
   line-height: 21px;
+  text-align: center;
+
+  box-sizing: border-box;
 }
 
 /* page-footer */
