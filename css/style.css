@@ -1066,7 +1066,7 @@ textarea {
   right: 0;
 
   display: none;
-  max-width: 195px;
+  max-width: 147px;
   margin: 0 auto;
   margin-top: 20px;
 
@@ -1428,7 +1428,6 @@ textarea {
   height: 31px;
   margin-right: 18px;
 
-  /*font-size: 0;*/
   vertical-align: top;
   opacity: 0.8;
   border-radius: 50%;
