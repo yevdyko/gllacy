@@ -77,8 +77,8 @@ textarea {
 .logo {
   float: left;
   width: 154px;
-  margin-right: 15px;
-  padding-top: 10px;
+  margin-right: 10px;
+  padding-top: 8px;
 
   -webkit-transform: translate(-5px);
           transform: translate(-5px);
@@ -99,7 +99,7 @@ textarea {
 .menu__list {
   margin: 0;
   padding: 0;
-  padding-top: 20px;
+  padding-top: 23px;
 
   font-size: 0;
 }
@@ -304,8 +304,8 @@ textarea {
 .user-block {
   float: right;
   padding: 0;
-  padding-top: 20px;
-  padding-bottom: 18px;
+  margin-bottom: 8px;
+  padding-top: 23px;
 }
 
 .user-block__search {
@@ -314,7 +314,7 @@ textarea {
   float: left;
   width: 32px;
   margin-right: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .user-block__login {
@@ -323,7 +323,7 @@ textarea {
   float: left;
   max-width: 100px;
   margin-right: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .user-block__cart {
@@ -331,7 +331,7 @@ textarea {
 
   float: right;
   width: 118px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .user-block__search:hover .user-block__popup,
@@ -654,6 +654,9 @@ input {
 /* page-header contacts */
 
 .page-header__contacts {
+  width: 200px;
+  margin-left: auto;
+
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
@@ -914,7 +917,7 @@ input {
   display: inline-block;
   width: 25%;
   padding: 13px;
-  margin-bottom: 7px;
+  margin-bottom: 5px;
   padding-bottom: 20px;
 
   font-size: 16px;
@@ -1001,7 +1004,7 @@ input {
 
 .catalog-item__price {
   position: absolute;
-  bottom: 10%;
+  bottom: 5%;
   left: 0;
 
   width: 160px;
@@ -1030,8 +1033,8 @@ input {
 
   display: block;
   margin: 0 5px;
-  padding: 0 5px;
-  padding-top: 10px;
+  padding: 0;
+  padding-top: 7px;
 
   font-weight: 500;
   font-size: 16px;
@@ -1364,8 +1367,8 @@ input {
 
 .copyright {
   float: right;
-  width: 200px;
-  padding: 20px 0;
+  width: 190px;
+  padding: 16px 0;
 
   font-size: 12px;
   line-height: 18px;
@@ -1408,6 +1411,9 @@ input {
   padding-bottom: 30px;
 
   font-size: 0;
+
+  -webkit-transform: translate(3px);
+          transform: translate(3px);
 }
 
 .social__btn {
@@ -1524,6 +1530,7 @@ input {
 
 .breadcrumbs {
   margin: 0;
+  margin-top: 2px;
   padding: 0;
 
   font-size: 0;
@@ -1568,7 +1575,7 @@ input {
 
 .catalog__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
 
   font-size: 35px;
   line-height: 42px;
@@ -1898,8 +1905,8 @@ input[type="checkbox"]:disabled:checked + label::after {
 /* pagination */
 
 .pagination {
-  margin-top: 55px;
-  margin-bottom: 30px;
+  margin-top: 53px;
+  margin-bottom: 39px;
 
 }
 
