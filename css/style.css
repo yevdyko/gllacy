@@ -1218,6 +1218,10 @@ input {
   color: #5a5a5a;
 }
 
+.news__item {
+  max-width: 290px;
+}
+
 .news__link {
   font-weight: 600;
   font-size: 24px;
