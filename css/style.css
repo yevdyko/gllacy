@@ -365,10 +365,6 @@ textarea {
   background: transparent url("../img/sprite.png") no-repeat;
 }
 
-input {
-  outline: none;
-}
-
 .user-block__popup  {
   position: absolute;
   top: 36px;
@@ -484,7 +480,7 @@ input {
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
-.cart__table {
+.cart__item {
   width: 100%;
 
   text-align: left;
@@ -492,24 +488,23 @@ input {
   border-bottom: 1px solid #cacac7;
 }
 
-.cart__table td {
+.cart__row {
   position: relative;
+
+  margin-top: 10px;
+  margin-bottom: 20px;
   vertical-align: top;
 }
 
 .user-block__btn--delete {
-
-  position: absolute;
-  top: 22px;
-  left: 0px;
-
-  display: block;
+  display: inline-block;
   width: 12px;
   height: 12px;
 
   font-size: 0;
 
   background-color: #f8f7f4;
+  vertical-align: top;
 }
 
 .user-block__btn--delete::before,
@@ -517,7 +512,7 @@ input {
   content: "";
 
   position: absolute;
-  top: 5px;
+  top: 15px;
 
   display: block;
   width: 15px;
@@ -535,39 +530,50 @@ input {
           transform: rotate(-45deg);
 }
 
-.cart__table img {
+.cart__image {
   display: inline-block;
-  padding-top: 12px;
-  padding-bottom: 10px;
-  padding-left: 28px;
-  padding-right: 10px;
-
+  margin-left: 12px;
   vertical-align: top;
+}
+
+.cart__image img {
+  width: 33px;
+  height: 33px;
+  border: 0;
+  border-radius: 50%;
 }
 
 .icecream__title {
   display: inline-block;
   width: 230px;
-  margin-top: 17px;
-  margin-bottom: 13px;
-
+  margin-left: 10px;
+  padding-top: 8px;
   vertical-align: top;
 }
 
-.icecream__amount p {
+.icecream__title p {
+  display: block;
+  margin: 0;
+}
+
+.icecream__amount {
+  display: inline-block;
   width: 117px;
-  margin-top: 17px;
-  margin-bottom: 13px;
+  margin-left: 5px;
+  padding-top: 8px;
+  vertical-align: top;
 }
 
 .icecream__amount--grey {
   color: #808080;
 }
 
-.icecream__price p {
+.icecream__price {
+  display: inline-block;
   width: 63px;
-  margin-top: 17px;
-  margin-bottom: 13px;
+  margin-left: 5px;
+  padding-top: 8px;
+  vertical-align: top;
 }
 
 .user-block__total {
@@ -1060,7 +1066,7 @@ input {
   right: 0;
 
   display: none;
-  width: 195px;
+  max-width: 195px;
   margin: 0 auto;
   margin-top: 20px;
 
