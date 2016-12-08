@@ -70,10 +70,6 @@ textarea {
   padding: 0 26px;
 }
 
-/* page-header */
-
-/*logo*/
-
 .logo {
   float: left;
   width: 154px;
@@ -88,8 +84,6 @@ textarea {
   width: 154px;
   height: 65px;
 }
-
-/*menu*/
 
 .menu {
   float: left;
@@ -130,7 +124,7 @@ textarea {
 
   text-decoration: none;
 
-  color: #ffffff;
+  color: #fff;
   border-radius: 20px;
 }
 
@@ -150,7 +144,7 @@ textarea {
 .menu__link--current {
   text-decoration: none;
 
-  color: #ffffff;
+  color: #fff;
   background-color: #d07058;
 }
 
@@ -165,20 +159,18 @@ textarea {
 .menu__link:hover {
   text-decoration: none;
 
-  color: #333333;
+  color: #333;
   background-color: #f7f6f3;
 }
 
 .menu__link:active {
   text-decoration: none;
 
-  color: #333333;
+  color: #333;
   background-color: #ededed;
 
   box-shadow: 0 2px 1px 0 #696969 inset;
 }
-
-/* dropdown-menu */
 
 .dropdown-menu {
   position: absolute;
@@ -222,7 +214,7 @@ textarea {
 }
 
 .dropdown-menu__link--current {
-  color: #ffffff;
+  color: #fff;
   background-color: #d07058;
 }
 
@@ -238,8 +230,6 @@ textarea {
 .dropdown-menu__link:active {
   background: #f6b5a5;
 }
-
-/* form-hint */
 
 .placeholder {
   position: relative;
@@ -299,8 +289,6 @@ textarea {
   color: #9a9a9a;
 }
 
-/* user-block */
-
 .user-block {
   float: right;
   padding: 0;
@@ -349,7 +337,7 @@ textarea {
   line-height: 18px;
   text-decoration: none;
 
-  color: #ffffff;
+  color: #fff;
   background-color: rgba(255, 255, 255, 0.4);
 }
 
@@ -388,7 +376,7 @@ textarea {
   font-size: 14px;
   line-height: 18px;
 
-  color: #999999;
+  color: #999;
 }
 
 .form-hint--login {
@@ -398,7 +386,7 @@ textarea {
   font-size: 14px;
   line-height: 18px;
 
-  color: #999999;
+  color: #999;
 }
 
 .form-hint--subscription {
@@ -408,7 +396,7 @@ textarea {
   font-size: 16px;
   line-height: 24px;
 
-  color: #999999;
+  color: #999;
 }
 
 .textarea:focus + .placeholder .form-hint--search {
@@ -432,7 +420,7 @@ textarea {
   font-size: 14px;
   line-height: 18px;
 
-  color: #999999;
+  color: #999;
 }
 
 .user-block__popup--login .user-block__input {
@@ -454,7 +442,7 @@ textarea {
   font-size: 13px;
   line-height: 24px;
 
-  color: #333333;
+  color: #333;
 }
 
 .user-block__links a:hover {
@@ -473,7 +461,7 @@ textarea {
   font-size: 13px;
   line-height: 17px;
 
-  color: #333333;
+  color: #333;
   background-color: #f8f7f4;
   border-radius: 5px;
 
@@ -517,7 +505,7 @@ textarea {
   display: block;
   width: 15px;
 
-  border-top: 1px solid #333333;
+  border-top: 1px solid #333;
 }
 
 .user-block__btn--delete::before {
@@ -585,7 +573,7 @@ textarea {
   line-height: 18px;
   text-align: right;
 
-  color: #333333;
+  color: #333;
 }
 
 .user-block__btn--search {
@@ -657,8 +645,6 @@ textarea {
   background-position: -10px -50px;
 }
 
-/* page-header contacts */
-
 .page-header__contacts {
   width: 200px;
   margin-left: auto;
@@ -679,8 +665,6 @@ textarea {
 .toggle {
   display: none;
 }
-
-/* slider */
 
 .slider {
   position: relative;
@@ -907,7 +891,6 @@ textarea {
 
 .toppings .btn {
   float: right;
-
 }
 
 .catalog {
@@ -1023,7 +1006,7 @@ textarea {
   text-align: center;
   text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
 
-  color: #ffffff;
+  color: #fff;
 
   box-sizing: border-box;
 }
@@ -1048,7 +1031,7 @@ textarea {
 
   text-decoration: none;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
 
 }
 
@@ -1076,8 +1059,6 @@ textarea {
 .catalog-item:hover .btn--catalog {
   display: block;
 }
-
-/* features */
 
 .features {
   margin-top: 13px;
@@ -1176,7 +1157,6 @@ textarea {
           justify-content: space-between;
   margin-bottom: 40px;
   color: #000;
-
 }
 
 .news {
@@ -1192,7 +1172,7 @@ textarea {
 .news--left {
   padding: 20px;
 
-  background: #ffffff url("../img/background-strawberry.jpg") no-repeat right;
+  background: #fff url("../img/background-strawberry.jpg") no-repeat right;
   background-size: cover;
 }
 
@@ -1201,7 +1181,7 @@ textarea {
 
   padding: 6px;
 
-  background: #ffffff url("../img/background-pattern-post.png") repeat 0 0;
+  background: #fff url("../img/background-pattern-post.png") repeat 0 0;
 }
 
 .news__frame {
@@ -1210,7 +1190,7 @@ textarea {
   padding-top: 27px;
   padding-bottom: 35px;
 
-  background: #ffffff;
+  background: #fff;
   border-radius: 10px;
   box-sizing: border-box;
 }
@@ -1269,8 +1249,8 @@ textarea {
 }
 
 .news__input:hover {
-  border-color: #999999;
-  box-shadow: inset 0 0 0 1px #999999;
+  border-color: #999;
+  box-shadow: inset 0 0 0 1px #999;
 }
 
 .news__input:focus {
@@ -1278,8 +1258,6 @@ textarea {
   box-shadow: inset 0 0 0 1px #8fbdec;
   outline: none;
 }
-
-/* contacts */
 
 .contacts {
   position: relative;
@@ -1299,7 +1277,7 @@ textarea {
   width: 100%;
   min-height: inherit;
 
-  background-color: #000000;
+  background-color: #000;
 }
 
 .contacts__info {
@@ -1311,7 +1289,7 @@ textarea {
   padding: 30px 25px;
 
   text-align: left;
-  color: #000000;
+  color: #000;
   background-color: #fff;
   border-radius: 13px;
 
@@ -1370,8 +1348,6 @@ textarea {
   box-sizing: border-box;
 }
 
-/* page-footer */
-
 .page-footer {
   border-top: 1px solid rgba(230, 230, 255, 0.4);
 }
@@ -1386,7 +1362,7 @@ textarea {
 }
 
 .copyright__logo {
-  color: #ffffff;
+  color: #fff;
 }
 
 .copyright__logo img {
@@ -1404,7 +1380,7 @@ textarea {
   line-height: 18px;
   text-decoration: none;
 
-  color: #ffffff;
+  color: #fff;
   border-bottom: 1px solid rgba(230, 230, 255, 0.4);
 }
 
@@ -1436,20 +1412,20 @@ textarea {
   vertical-align: top;
   opacity: 0.8;
   border-radius: 50%;
-  box-shadow: inset 0 0 2px 0 #ffffff,
+  box-shadow: inset 0 0 2px 0 #fff,
               0 0 0 3px rgba(255, 255, 255, 0.5);
   background: transparent url("../img/sprite.png") no-repeat;
   opacity: 0.8;
 }
 
 .social__btn:hover {
-  box-shadow: inset 0 0 2px 0 #ffffff,
+  box-shadow: inset 0 0 2px 0 #fff,
               0 0 0 5px rgba(255, 255, 255, 0.7);
   opacity: 1;
 }
 
 .social__btn:active {
-  box-shadow: inset 0 2px 1px 0 #888888,
+  box-shadow: inset 0 2px 1px 0 #888,
               0 0 0 5px rgba(255, 255, 255, 0.7);
 }
 
@@ -1534,10 +1510,6 @@ textarea {
   border-bottom: 1px solid rgba(249, 172, 159, 0.3);
 }
 
-/* catalog */
-
-/* breadcrumbs */
-
 .breadcrumbs {
   margin: 0;
   margin-top: 2px;
@@ -1574,7 +1546,7 @@ textarea {
   line-height: 17px;
   text-decoration: none;
 
-  color: #ffffff;
+  color: #fff;
   border-bottom: 1px solid rgba(230, 230, 255, 0.4);
 }
 
@@ -1589,10 +1561,8 @@ textarea {
 
   font-size: 35px;
   line-height: 42px;
-  color: #ffffff;
+  color: #fff;
 }
-
-/* filter */
 
 .filter {
   margin-bottom: 12px;
@@ -1639,7 +1609,7 @@ textarea {
   line-height: 22px;
   vertical-align: top;
 
-  color: #ffffff;
+  color: #fff;
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 100px;
 }
@@ -1672,16 +1642,16 @@ select::-ms-expand {
   margin-top: 48px;
 
   border: 5px solid transparent;
-  border-top: 5px solid #ffffff;
+  border-top: 5px solid #fff;
 }
 
 .sorting:hover {
-  color: #333333;
+  color: #333;
   background-color: rgba(255, 255, 255, 1);
 }
 
 .sorting__item:hover::after {
-  border-top: 5px solid #333333;
+  border-top: 5px solid #333;
 }
 
 .price {
@@ -1703,7 +1673,6 @@ select::-ms-expand {
 .fillers {
   width: 670px;
 }
-
 
 .fat__item {
   display: inline-block;
@@ -1785,7 +1754,7 @@ select::-ms-expand {
   width: 20px;
   height: 20px;
 
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
   border-radius: 50%;
 
   box-sizing: border-box;
@@ -1802,15 +1771,13 @@ input[type="radio"]:checked  + label::after {
   width: 12px;
   height: 12px;
 
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 50%;
 }
 
 .fat__item:hover label::before {
-  border: 2px solid #ffffff;
+  border: 2px solid #fff;
 }
-
-/* fillers filter */
 
 .fillers__item {
   display: inline-block;
@@ -1849,14 +1816,14 @@ input[type="radio"]:checked  + label::after {
   width: 20px;
   height: 20px;
 
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
   border-radius: 3px;
 
   box-sizing: border-box;
 }
 
 .fillers__item:hover label::before {
-  border: 2px solid #ffffff;
+  border: 2px solid #fff;
 }
 
 input[type="checkbox"]:checked  + label::after {
@@ -1870,8 +1837,8 @@ input[type="checkbox"]:checked  + label::after {
   width: 10px;
   height: 5px;
 
-  border-left: 2px solid #ffffff;
-  border-bottom: 2px solid #ffffff;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
 
   -webkit-transform: rotate(-45deg);
 
@@ -1883,8 +1850,6 @@ input[type="checkbox"]:disabled:checked + label::after {
   border-bottom: 2px solid #b2c1b7;
 }
 
-/* apply button */
-
 .btn__filter {
   width: 145px;
   margin-top: 23px;
@@ -1894,17 +1859,17 @@ input[type="checkbox"]:disabled:checked + label::after {
   font-size: 16px;
   line-height: 22px;
 
-  color: #ffffff;
+  color: #fff;
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 100px;
-  border: 2px solid #ffffff;
+  border: 2px solid #fff;
 
   outline: none;
 }
 
 .btn__filter:hover {
   color: #353535;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .btn__filter:active {
@@ -1916,12 +1881,9 @@ input[type="checkbox"]:disabled:checked + label::after {
   box-shadow: 0 2px 3px 0 #686868 inset;
 }
 
-/* pagination */
-
 .pagination {
   margin-top: 53px;
   margin-bottom: 39px;
-
 }
 
 .pagination__list {
@@ -1956,7 +1918,7 @@ input[type="checkbox"]:disabled:checked + label::after {
 
   text-decoration: none;
 
-  color: #ffffff;
+  color: #fff;
   border-radius: 50%;
 }
 
@@ -1972,7 +1934,7 @@ input[type="checkbox"]:disabled:checked + label::after {
 
 .pagination__link--active {
   color: black;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .pagination__link:not(.pagination__link--active):hover {
@@ -2019,13 +1981,11 @@ input[type="checkbox"]:disabled:checked + label::after {
 
   font-size: 0;
 
-  border-right: 2px solid #ffffff;
-  border-bottom: 2px solid #ffffff;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
-
-/* feedback-form */
 
 .feedback-wrapper {
   position: fixed;
@@ -2090,7 +2050,7 @@ input[type="checkbox"]:disabled:checked + label::after {
   line-height: 24px;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
 
-  color: #999999;
+  color: #999;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
 
